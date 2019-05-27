@@ -1,0 +1,4 @@
+node_modules
+.tern-project
+dist/favicon_io.zip
+dist/favicon_io/
