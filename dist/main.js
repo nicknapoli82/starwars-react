@@ -35228,7 +35228,9 @@ function (_React$Component) {
         className: "header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "StarWars People - Reactified")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "react-base"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PeopleList, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "people-list"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PeopleList, {
         people: this.state.people,
         selectPerson: this.selectPerson,
         selected: this.state.selected
@@ -35274,7 +35276,9 @@ var SinglePerson = function SinglePerson(props) {
       key: "anchor",
       href: "#"
     }, "Hide Details"));
-    result.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, props.selected.name));
+    result.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      key: "heading"
+    }, props.selected.name));
 
     for (var k in props.selected) {
       if (keysAvailable.includes(k)) {

@@ -125,7 +125,7 @@ class Everything extends React.Component {
       <div>
 	<div className="header"><h1>StarWars People - Reactified</h1></div>
 	<div className="react-base">
-	  <div>
+	  <div id="people-list">
             <PeopleList people={this.state.people} selectPerson={this.selectPerson} selected={this.state.selected}/>
 	  </div>
 	  <div className="singlePerson">
@@ -161,7 +161,7 @@ const SinglePerson = (props) => {
     const keysAvailable = ['height', 'mass', 'hair_color', 'skin_color', 'eye_color', 'birth_year', 'gender'];
     let result = [];
     result.push(<a key="anchor" href="#">Hide Details</a>);
-    result.push(<h2>{props.selected.name}</h2>);
+    result.push(<h2 key="heading">{props.selected.name}</h2>);
     for (let k in props.selected) {
       if (keysAvailable.includes(k)) {
 	result.push(<p key={k}><b>{k}</b>: {props.selected[k]}</p>);

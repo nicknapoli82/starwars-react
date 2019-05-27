@@ -28,6 +28,11 @@ li:hover {
     color: white;
 }
 
+#people-list {
+    max-height: 75vh;
+    overflow-y: auto;    
+}
+
 .singlePerson {
     align-content: center;
     text-align: center;
