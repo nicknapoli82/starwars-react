@@ -1,0 +1,18 @@
+* Starwars People - Reactified
+Pretty much exactly the same as swapi-people-lister
+
+Used [[https://www.valentinog.com/blog/babel/][Tutorial: How to set up React, webpack, and Babel 7 from scratch (2019)] as a guide to setup frontend web dev environment.
+
+Found that the guide is good, and sets up everything pretty much. It appears Babel doesn't really know how to work with *async* and *await* well though. So you have to add a little more to the webpack.config.json file to get that working, and you have to add an extra package. I pillaged some of the code from the Juke Workshop to get that stuff working right.
+
+A good learning experience as far as I am concerned.
+
+** (Note) to observer. Everything in the dist folder should work upfront
+You should not have to do any thing with npm.
+index.js in src is the only file that does the stuff.
+
+Webpack generates main.js in the dist folder.
+
+Thats it I believe.
+
+Enjoy
