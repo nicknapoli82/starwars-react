@@ -76,6 +76,7 @@ class Everything extends React.Component {
     else this.setState( { selected: null } );
   }
 
+  // This is a function that loads everything
   async loadPeople () {
     let response = await fetch(swApiRoot);
     response = await response.json();
